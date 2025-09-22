@@ -1,25 +1,25 @@
 
-# Sistema de Gerenciamento de Biblioteca
+# 📚 Sistema de Gerenciamento de Biblioteca
 
-## Descrição
+## 🔹 Descrição
 Este sistema é uma aplicação **Spring Boot (Java)** com integração a **MySQL** para gerenciamento de livros de uma biblioteca municipal.  
 O sistema permite **CRUD completo** (Cadastrar, Listar, Atualizar e Excluir livros) e possui um **frontend em HTML + JavaScript** integrado ao backend.
 
 ---
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 - **Java 17**
 - **Spring Boot 3.x**
 - **Spring Data JPA (Hibernate)**
 - **MySQL**
-- **HTML + CSS + JavaScript**
+- **HTML + CSS + JavaScript (frontend simples)**
 
 ---
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 ```
 Projeto-Case/
-├── src/main/java/br/com/fecaf
+├── src/main/java/com/example/projetocase/
 │   ├── ProjetoCaseApplication.java
 │   ├── model/Livro.java
 │   ├── repository/LivroRepository.java
@@ -37,14 +37,14 @@ Projeto-Case/
 
 ---
 
-## Pré-requisitos
+## ⚙️ Pré-requisitos
 - **Java 17** ou superior instalado.
 - **Maven** instalado.
 - **MySQL** instalado e rodando.
 
 ---
 
-## Configuração do Banco de Dados
+## 🛠️ Configuração do Banco de Dados
 1. Criar o banco de dados no MySQL:
    ```sql
    CREATE DATABASE db_biblioteca;
@@ -72,21 +72,20 @@ Projeto-Case/
 
 3. Configurar o arquivo `application.properties`:
    ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/db_biblioteca?useSSL=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=123456789
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca?useSSL=false&serverTimezone=UTC
+   spring.datasource.username=root
+   spring.datasource.password=123456
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-server.port=8080
+   server.port=8080
    ```
 
 ---
 
-## Como Executar
+## ▶️ Como Executar
 1. Entre na pasta do projeto:
    ```bash
    cd Projeto-Case
@@ -102,10 +101,8 @@ server.port=8080
 
 ---
 
-## Funcionalidades
+## 📋 Funcionalidades
 - **Cadastrar** livros informando título, autor, ISBN, ano e quantidade.  
 - **Listar** todos os livros cadastrados em uma tabela.  
 - **Editar** um livro existente.  
 - **Excluir** livros cadastrados.  
-
-
