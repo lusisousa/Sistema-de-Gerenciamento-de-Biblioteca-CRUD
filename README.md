@@ -19,15 +19,17 @@ O sistema permite **CRUD completo** (Cadastrar, Listar, Atualizar e Excluir livr
 ## 📂 Estrutura do Projeto
 ```
 Projeto-Case/
-├── src/main/java/com/example/projetocase/
-│   ├── ProjetoCaseApplication.java
+├── src/main/java/br/com/fecaf
+│   ├── App.Java
+│   ├── services/LivroServices.Java
 │   ├── model/Livro.java
 │   ├── repository/LivroRepository.java
-│   └── controller/LivroController.java
+│   ├── controller/LivroController.java
+│   └── database/model.sql
 │
 ├── src/main/resources/
 │   ├── application.properties
-│   └── static/ (frontend)
+│   └── static/
 │       ├── index.html
 │       ├── script.js
 │       └── style.css
